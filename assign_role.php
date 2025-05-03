@@ -7,7 +7,7 @@ include('connect.php');
 date_default_timezone_set('Asia/Kolkata');
 $current_date = date('Y-m-d');
 
-
+//
 if (isset($_POST["btn_submit"])) {
     extract($_POST);
     $sql = "insert into tbl_group(name,description)values('$assign_name','$description')";
